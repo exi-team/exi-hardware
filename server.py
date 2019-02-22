@@ -3,7 +3,7 @@ from socket import error as SocketError
 import RPi.GPIO as GPIO
 
 sock = socket.socket()
-sock.bind(('192.168.1.37', 9090))
+sock.bind(('0.0.0.0', 9090))
 sock.listen(1)
 GPIO.setmode(GPIO.BOARD)
 curState1 = False
